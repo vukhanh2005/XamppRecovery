@@ -33,6 +33,7 @@ public sealed class MainForm : Form
         recovery = new(log, processes, sql, backups, analyzer);
         restore = new(log, backups, recovery, processes, sql);
         Text = "XAMPP MySQL Recovery Tool";
+        Icon = new Icon(typeof(MainForm), "Assets.app.ico");
         Font = new Font("Segoe UI", 10);
         BackColor = Color.FromArgb(244, 246, 239);
         ForeColor = Color.FromArgb(27, 49, 40);

@@ -1,4 +1,4 @@
-#define AppVersion "1.0.0"
+#define AppVersion "1.0.1"
 #define AppName "XAMPP MySQL Recovery Tool"
 #define AppExe "XamppMySqlRecoveryTool.exe"
 
@@ -21,6 +21,7 @@ OutputBaseFilename=XamppMySqlRecoveryTool-Setup-{#AppVersion}-x64
 Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
+SetupIconFile=..\XamppRecoveryTool\Assets\app.ico
 UninstallDisplayIcon={app}\{#AppExe}
 CloseApplications=no
 RestartApplications=no

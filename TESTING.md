@@ -51,3 +51,11 @@ Crash recovery was exercised by leaving a durable journal at the directory-renam
 - Uninstall exited 0, removed the EXE, Start menu shortcut and registration, and retained generated logs and a user-file sentinel.
 - Installer is unsigned. Interactive wizard, optional desktop shortcut and upgrades from a previous version were not tested.
 - Release includes setup, portable EXE and SHA256SUMS.txt. Database copies, SQL, incident logs and private notes are excluded from Git.
+
+## Logo update v1.0.1 - 2026-10-06
+
+- Converted the supplied single-frame `fadding-simpsons.gif` to an ICO with 16, 24, 32, 48, 64, 128 and 256 px sizes, preserving aspect ratio.
+- Applied it to the application EXE, WinForms window and setup EXE; shortcuts use the application EXE icon.
+- Release build/publish: zero warnings/errors, 22 safety checks passed; rendered window icon visually checked.
+- Extracted 32 px icons from both published EXEs match the source ICO pixels.
+- Isolated v1.0.1 install/uninstall passed; installed EXE hash, version registration and Start menu shortcut target verified.

@@ -4,7 +4,7 @@
 
 ## Chạy ứng dụng
 
-Tải **[bộ cài mới nhất](https://github.com/vukhanh2005/XamppRecovery/releases/latest)**, chọn `XamppMySqlRecoveryTool-Setup-1.0.0-x64.exe`. Chạy Setup, chọn thư mục cài và shortcut desktop nếu cần. Sau đó mở **XAMPP MySQL Recovery Tool** từ Start menu.
+Tải **[bộ cài mới nhất](https://github.com/vukhanh2005/XamppRecovery/releases/latest)**, chọn `XamppMySqlRecoveryTool-Setup-1.0.1-x64.exe`. Chạy Setup, chọn thư mục cài và shortcut desktop nếu cần. Sau đó mở **XAMPP MySQL Recovery Tool** từ Start menu.
 
 Bộ cài dành cho Windows 10/11 x64, cài theo tài khoản hiện tại tại `%LOCALAPPDATA%\Programs\XamppMySqlRecoveryTool`, không cần quyền Administrator. Gỡ bằng **Settings > Apps > Installed apps**; backup XAMPP và log phát sinh được giữ lại. Đóng ứng dụng và chờ phục hồi hoàn tất trước khi nâng cấp hoặc gỡ cài đặt. Bộ cài không cài kèm XAMPP.
 
@@ -125,7 +125,7 @@ build.bat
 publish.bat
 ```
 
-Để tạo bộ cài, cài [Inno Setup](https://jrsoftware.org/isinfo.php) 6.2 trở lên rồi chạy `setup.bat`. Nếu compiler nằm ở đường dẫn riêng, đặt `ISCC` thành đường dẫn đầy đủ tới `ISCC.exe`. Kết quả ở `release\XamppMySqlRecoveryTool-Setup-1.0.0-x64.exe`. Không đưa binary, database, SQL dump hoặc log vào Git; binary được đính kèm GitHub Release.
+Để tạo bộ cài, cài [Inno Setup](https://jrsoftware.org/isinfo.php) 6.2 trở lên rồi chạy `setup.bat`. Nếu compiler nằm ở đường dẫn riêng, đặt `ISCC` thành đường dẫn đầy đủ tới `ISCC.exe`. Kết quả ở `release\XamppMySqlRecoveryTool-Setup-1.0.1-x64.exe`. Không đưa binary, database, SQL dump hoặc log vào Git; binary được đính kèm GitHub Release.
 
 Kiểm thử cơ bản tạo fixture riêng trong `test-artifacts`, kiểm tra port IPv4/IPv6, ownership, đường dẫn nguy hiểm, backup SHA-256, backup rỗng/hỏng, khóa phiên phục hồi, rollback và crash journal. Không chạy repair trên XAMPP thật.
 
