@@ -1,0 +1,15 @@
+**/bin/
+**/obj/
+test-artifacts/
+release/
+*.log
+*.sql
+*.sql.gz
+*.zip
+xampp_mysql_backups/
+data_broken_*/
+data_failed_*/
+data_recovery_*/
+*.private.md
+*.user
+.vs/
