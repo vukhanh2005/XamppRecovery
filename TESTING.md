@@ -59,3 +59,11 @@ Crash recovery was exercised by leaving a durable journal at the directory-renam
 - Release build/publish: zero warnings/errors, 22 safety checks passed; rendered window icon visually checked.
 - Extracted 32 px icons from both published EXEs match the source ICO pixels.
 - Isolated v1.0.1 install/uninstall passed; installed EXE hash, version registration and Start menu shortcut target verified.
+
+## Uninstall shortcut v1.0.2 - 2026-10-06
+
+- Release build/publish: zero warnings/errors; 22 safety checks passed.
+- Upgraded an isolated v1.0.1 installation to v1.0.2, retaining its install directory and user log.
+- Verified installed EXE hash, version registration and the new Start menu uninstall shortcut target.
+- Ran that target silently: uninstall removed the app, registry entry and both Start menu shortcuts; the user log remained intact.
+- Interactive uninstall confirmation was not automated; the shortcut uses the standard Inno Setup uninstaller without silent flags.
